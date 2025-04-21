@@ -11,6 +11,7 @@ function agregarTarea() {
     alert("Por favor completa todos los campos.");
     return;
   }
+  
 
   const lista = document.getElementById('lista-tareas');
   const nuevaTarea = document.createElement('li');
@@ -39,6 +40,8 @@ function agregarTarea() {
 
   const contenedorClima = nuevaTarea.querySelector('.clima');
   obtenerClima(ciudad, fecha, contenedorClima);
+
+  guardarTareasEnLocalStorage();
 
   // Limpiar campos
   document.getElementById('titulo').value = "";
