@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo/estilo.css    ">
+    <script src="./script/script.js"></script>
+    <title>TaskPlaner</title>
+</head>
+<body>
+    <header>
+        <div class="titulo">
+            <h1> TaskPlaner </h1>   
+        </div>
+    </header>
+    <main>
+      <div class="contenedor-form">
+        <div class="form">
+         <div class="centrado">
+          <div class="form">
+            <div class="centrado">
+              <label for="titulo">Título</label>
+              <input class="text" type="text" id="titulo" name="titulo">
+            </div>
+          
+            <div class="centrado">
+              <label for="descripcion">Descripción</label>
+              <textarea class="text" id="descripcion" name="descripcion"></textarea>
+            </div>
+          
+            <div class="centrado">
+              <label for="fecha">Fecha de vencimiento</label>
+              <input class="text" type="date" id="fecha" name="fecha">
+            </div>
+            <div class="centrado">
+              <label for="ciudad">Ciudad</label>
+              <input class="text" type="text" id="ciudad" name="ciudad">
+            </div>
+            
+          
+            <div class="centrado">
+              <label for="estado">Estado</label>
+              <select class="text" id="estado" name="estado">
+                <option value="pendiente">Pendiente</option>
+                <option value="en progreso">En progreso</option>
+                <option value="completada">Completada</option>
+              </select>
+            </div>
+          
+            <div class="centrado">
+              <input class="submit" type="submit" value="Agregar" onclick="agregarTarea()">
+            </div>
+          </div>
+          
+        </div>
+       </div>
+      </div>  
+      <div>
+        <ul id="lista-tareas">
+            
+          </ul>
+      </div>
+    </main>
+    
+</body>
+</html>
