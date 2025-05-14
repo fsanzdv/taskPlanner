@@ -79,7 +79,7 @@ app.use((req, res) => {
 });
 
 // Configurar puerto
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5050;
 
 // Iniciar servidor
 server.listen(PORT, () => {

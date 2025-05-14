@@ -1,7 +1,7 @@
 // backend/middlewares/auth.js
 const jwt = require('jsonwebtoken');
-const User = require('../models/User');
-const { createError } = require('../utils/errorHandler');
+const User = require('../../models/User.js');
+const { createError } = require('../../utils/errorHandler.js');
 
 /**
  * Middleware para verificar la autenticación mediante JWT

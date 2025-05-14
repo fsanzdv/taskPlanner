@@ -1,0 +1,20 @@
+{"level":"info","message":"Servidor iniciado en el puerto 5000 en modo development","timestamp":"2025-05-14 03:08:45:845"}
+{"level":"error","message":"Error al cargar plantillas de correo: ENOENT: no such file or directory, open 'C:\\Users\\Facundo\\Documents\\Desarrollo web\\Evolve Academy\\TaskPlaner\\Backend\\templates\\emails\\welcome.html'","timestamp":"2025-05-14 03:08:45:845"}
+{"level":"info","message":"MongoDB conectado: localhost","timestamp":"2025-05-14 03:08:45:845"}
+{"level":"error","message":"Error al conectar con servidor de correo: getaddrinfo ENOTFOUND smtp.example.com","timestamp":"2025-05-14 03:08:46:846"}
+{"level":"info","message":"Servidor iniciado en el puerto 5000 en modo development","timestamp":"2025-05-14 03:12:55:1255"}
+{"level":"error","message":"Error al cargar plantillas de correo: ENOENT: no such file or directory, open 'C:\\Users\\Facundo\\Documents\\Desarrollo web\\Evolve Academy\\TaskPlaner\\Backend\\templates\\emails\\welcome.html'","timestamp":"2025-05-14 03:12:55:1255"}
+{"level":"info","message":"MongoDB conectado: localhost","timestamp":"2025-05-14 03:12:55:1255"}
+{"level":"error","message":"Error al conectar con servidor de correo: getaddrinfo ENOTFOUND smtp.example.com","timestamp":"2025-05-14 03:12:55:1255"}
+{"level":"info","message":"Servidor iniciado en el puerto 5000 en modo development","timestamp":"2025-05-14 03:14:08:148"}
+{"level":"error","message":"Error al cargar plantillas de correo: ENOENT: no such file or directory, open 'C:\\Users\\Facundo\\Documents\\Desarrollo web\\Evolve Academy\\TaskPlaner\\Backend\\templates\\emails\\welcome.html'","timestamp":"2025-05-14 03:14:08:148"}
+{"level":"info","message":"MongoDB conectado: localhost","timestamp":"2025-05-14 03:14:08:148"}
+{"level":"error","message":"Error al conectar con servidor de correo: getaddrinfo ENOTFOUND smtp.example.com","timestamp":"2025-05-14 03:14:08:148"}
+{"level":"info","message":"Servidor iniciado en el puerto 5050 en modo development","timestamp":"2025-05-14 03:14:43:1443"}
+{"level":"error","message":"Error al cargar plantillas de correo: ENOENT: no such file or directory, open 'C:\\Users\\Facundo\\Documents\\Desarrollo web\\Evolve Academy\\TaskPlaner\\Backend\\templates\\emails\\welcome.html'","timestamp":"2025-05-14 03:14:43:1443"}
+{"level":"info","message":"MongoDB conectado: localhost","timestamp":"2025-05-14 03:14:43:1443"}
+{"level":"error","message":"Error al conectar con servidor de correo: getaddrinfo ENOTFOUND smtp.example.com","timestamp":"2025-05-14 03:14:43:1443"}
+{"level":"info","message":"Servidor iniciado en el puerto 5050 en modo development","timestamp":"2025-05-14 03:16:57:1657"}
+{"level":"error","message":"Error al cargar plantillas de correo: ENOENT: no such file or directory, open 'C:\\Users\\Facundo\\Documents\\Desarrollo web\\Evolve Academy\\TaskPlaner\\Backend\\templates\\emails\\welcome.html'","timestamp":"2025-05-14 03:16:57:1657"}
+{"level":"info","message":"MongoDB conectado: localhost","timestamp":"2025-05-14 03:16:57:1657"}
+{"level":"error","message":"Error al conectar con servidor de correo: getaddrinfo ENOTFOUND smtp.example.com","timestamp":"2025-05-14 03:16:57:1657"}

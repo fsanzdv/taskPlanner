@@ -2,7 +2,7 @@
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
-const { createError } = require('../utils/errorHandler');
+const { createError } = require('../../utils/errorHandler');
 
 // Configurar almacenamiento para multer
 const storage = multer.diskStorage({
