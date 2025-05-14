@@ -1,0 +1,149 @@
+# TaskPlanner - Aplicación Full-Stack
+
+TaskPlanner es una aplicación de gestión de tareas y eventos con características avanzadas, incluyendo pronóstico del clima para las tareas basado en la ciudad y fecha, autenticación de usuarios, y comunicación en tiempo real.
+
+## Características
+
+- **Autenticación completa** con JWT y protección de contraseñas con bcrypt
+- **Roles de usuario** (usuario normal y administrador)
+- **Panel de administración** para gestionar usuarios y ver estadísticas
+- **Gestión de tareas** con información del clima para la fecha y ciudad
+- **Subida de archivos** adjuntos a las tareas
+- **Comunicación en tiempo real** mediante WebSockets
+- **Notificaciones por correo electrónico** para eventos importantes
+- **Diseño responsive** adaptado a dispositivos móviles y de escritorio
+
+## Tecnologías Utilizadas
+
+### Frontend
+- React.js para la interfaz de usuario
+- React Router para la navegación
+- Context API para el manejo de estado
+- Socket.io para comunicación en tiempo real
+- Recharts para visualización de datos estadísticos
+- Axios para peticiones HTTP
+
+### Backend
+- Node.js como entorno de ejecución
+- Express como framework de servidor
+- MongoDB para almacenamiento persistente de datos
+- Mongoose como ODM para MongoDB
+- JWT para autenticación y autorización
+- bcrypt para encriptación de contraseñas
+- Socket.io para comunicación en tiempo real
+- Multer para gestión de archivos
+- Nodemailer para envío de correos electrónicos
+- Winston para logs del sistema
+
+## Estructura del Proyecto
+
+El proyecto sigue una arquitectura cliente-servidor con frontend y backend separados:
+
+```
+taskplanner/
+├── backend/         # Servidor Node.js + Express + MongoDB
+├── frontend/        # Cliente React.js
+├── uploads/         # Directorio para archivos adjuntos y fotos de perfil
+└── logs/            # Logs del sistema
+```
+
+### Backend
+
+La arquitectura del backend sigue los principios SOLID:
+
+- **Modelos**: Definen la estructura de datos y validaciones
+- **Controladores**: Manejan las peticiones HTTP
+- **Servicios**: Contienen la lógica de negocio
+- **Rutas**: Definen los endpoints de la API
+- **Middlewares**: Manejan autenticación, validación, etc.
+- **Configuración**: Conecta con servicios externos (MongoDB, etc.)
+- **Utilidades**: Funciones reutilizables
+
+### Frontend
+
+El frontend está organizado por características y componentes:
+
+- **Componentes**: Interfaz de usuario reutilizable
+- **Contextos**: Manejo de estado global (autenticación, etc.)
+- **Servicios**: Comunicación con el backend y servicios externos
+- **Utilidades**: Funciones de ayuda (formateo, validación, etc.)
+
+## Instalación y Ejecución
+
+### Requisitos previos
+- Node.js (v14 o superior)
+- MongoDB (v4 o superior)
+- Cuenta en OpenWeatherMap para obtener una API key
+
+### Backend
+
+1. Navegar al directorio del backend:
+   ```
+   cd taskplanner/backend
+   ```
+
+2. Instalar dependencias:
+   ```
+   npm install
+   ```
+
+3. Crear archivo `.env` basado en `.env.example`:
+   ```
+   cp .env.example .env
+   ```
+
+4. Editar `.env` con la configuración adecuada:
+   - Configurar conexión a MongoDB
+   - Añadir API key de OpenWeatherMap
+   - Configurar secreto JWT
+   - Configurar servidor SMTP para correos
+
+5. Iniciar el servidor:
+   ```
+   npm run dev
+   ```
+
+### Frontend
+
+1. Navegar al directorio del frontend:
+   ```
+   cd taskplanner/frontend
+   ```
+
+2. Instalar dependencias:
+   ```
+   npm install
+   ```
+
+3. Crear archivo `.env.local`:
+   ```
+   REACT_APP_API_URL=http://localhost:5000/api
+   REACT_APP_WEBSOCKET_URL=http://localhost:5000
+   ```
+
+4. Iniciar la aplicación:
+   ```
+   npm start
+   ```
+
+## Uso de la Aplicación
+
+### Autenticación
+- Registrarse como nuevo usuario
+- Iniciar sesión con credenciales
+- Restablecer contraseña olvidada
+
+### Tareas
+- Crear, editar y eliminar tareas
+- Ver pronóstico del clima para la ciudad y fecha
+- Adjuntar archivos a las tareas
+- Filtrar tareas por estado y búsqueda
+
+### Administración
+- Acceder al panel de administración (solo usuarios con rol admin)
+- Ver estadísticas del sistema
+- Gestionar usuarios (cambiar roles, activar/desactivar)
+
+## Licencia
+
+Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
